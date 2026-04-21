@@ -1,4 +1,3 @@
 FROM wordpress:latest
 
-# (opcional) define porta padrão
-EXPOSE 80
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
